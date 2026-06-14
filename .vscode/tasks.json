@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run VIBE.py",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/VIBE.py"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Python: Lint Check",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "-m",
+                "pylint",
+                "${workspaceFolder}/VIBE.py"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "new"
+            }
+        }
+    ]
+}
